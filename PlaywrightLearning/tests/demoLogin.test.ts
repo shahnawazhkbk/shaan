@@ -30,7 +30,7 @@ test("TC_002 Test All content", async ({ page }) => {
 
 });
 
-test("TC_003 Test All content", async ({ page }) => {
+test.only("TC_003 Test All content", async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
     const enterName= page.getByRole('textbox', { name: 'Enter Name' });
     const enteredName=await enterName.fill('Shahnawaz Ahmad');
